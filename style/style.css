@@ -226,7 +226,8 @@ button.navbar__btn {
 
 .about__text {
   font-size: 14px;
-  padding-left: 35px;
+  margin-right: 15px;
+  padding-left: 35px;  
 }
 
 .about__btn {
