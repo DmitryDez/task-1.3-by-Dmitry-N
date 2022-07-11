@@ -1,0 +1,152 @@
+@import url('fonts.css');
+@import url('normalize.css');
+
+body {
+  font-family: 'TT Lakes', 'Arial', 'Times New Roman', 'Helvetica';
+  font-size:  16px;
+  color: #1B1C21;
+  width:     320px;
+  min-width: 320px;
+  box-shadow: 15px 0 50px 0 rgba(14, 24, 80, 0.2);
+}
+
+/*header*/
+.header {
+  display: flex;
+  justify-content: center;
+  padding-top:    15px;
+  padding-bottom: 15px;
+  margin-bottom:  15px;
+}
+
+.header__btn {
+  padding: 0;
+  transition: transform 0.5s, filter 0.7s;
+}
+
+.header__btn:hover {
+  transform: scale(1.1);
+  filter: hue-rotate(-90deg);
+}
+
+.header__btn:first-child {
+  margin-right: 5%;
+}
+
+.header__logo {
+  margin-right: 23%;
+}
+
+/*navbar*/
+.navbar {
+   margin-bottom: 265px;
+}
+
+.navbar__item {
+  position: relative;
+  padding-left:   25px;
+  padding-bottom: 15px;
+  padding-top:    15px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.navbar__btn {
+  font-size: inherit;
+  font-weight: 500;
+  padding: 0;
+}
+
+.navbar__item_selected::before {
+  position: absolute;
+  content: url('../assets/icons/highlight.svg');
+  top:  5px;
+  left: 0;
+}
+
+.navbar__item_selected button {
+  color: #7E7E82;
+}
+
+.navbar__item:hover {
+  background-color: #e7fefa;
+}
+
+.navbar__item:hover button {
+  background-color: #e7fefa !important;
+}
+
+/*footer*/
+.footer {
+  padding-left:   25px;
+  padding-bottom: 30px;
+}
+
+.footer__buttons {
+  display: flex;
+}
+
+/*bad naming*/
+.buttons__btn {
+  padding:         0;
+  padding-left: 15px;
+  transition: transform 0.5s, filter 0.7s;
+}
+
+.buttons__btn:first-child {
+  padding-left: 0;
+}
+
+.buttons__btn:hover {
+  transform: scale(0.9);
+  filter: hue-rotate(-180deg);
+}
+
+.info__mail {
+  font-size: inherit;
+  font-weight: 500;
+}
+
+.info__number {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.lang-switcher {
+  display: flex;
+}
+
+.lang-switcher__btn {
+  font-size: inherit;
+  font-weight: 500;
+  padding: 0;
+  padding-left: 10px;
+  transition: color 0.5s;
+}
+
+.lang-switcher__btn:first-child {
+  padding-left: 0;
+}
+
+.lang-switcher__btn:hover {
+  color: #41F6D7;
+}
+
+.active-btn {
+  color: #7E7E82;
+}
+
+/*common*/
+.btn {
+  display: block;
+  border: none;
+  cursor: pointer;  
+  background-color: white;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
