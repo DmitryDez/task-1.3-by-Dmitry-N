@@ -1,5 +1,5 @@
 # task-WebCore-by-Dmitry-N
-study WebCore
+WebCore tasks to study frontend <br/>
 Task 1.3 done <br/>
-Task 1.4 done  
+Task 1.4 done <br/>
 there is nothing useful here
