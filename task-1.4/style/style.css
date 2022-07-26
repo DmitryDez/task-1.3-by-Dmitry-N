@@ -46,7 +46,9 @@ body {
 .modal-menu {
   width:     320px;
   min-width: 320px;
+  height:    100vh;
   box-shadow: 15px 0 50px 0 rgba(14, 24, 80, 0.2);
+  overflow-y: hidden;
 }
 
 .content-wrapper {
@@ -98,7 +100,7 @@ body {
   padding: 15px 0;
 }
 
-.navbar__item_selected::before {
+.navbar__item--selected::before {
   position: absolute;
   content: url('../assets/icons/highlight.svg');
   top:  5px;
@@ -109,8 +111,8 @@ body {
   color: #7E7E82;
 }
 
-.navbar__item:hover {
-  background-color: #e7fefa;
+.navbar__item:hover .navbar__link{
+  color: #7E7E82;
 }
 
 /*footer*/
