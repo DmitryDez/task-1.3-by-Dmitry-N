@@ -1404,7 +1404,7 @@ button.navbar__btn {
 .gap-to-bottom {
   margin-bottom: 95%; }
 
-@media (max-width: 360px) {
+@media (max-width: 767px) {
   .gap-to-bottom {
     margin-bottom: 5%; } }
 
