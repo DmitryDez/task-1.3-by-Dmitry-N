@@ -1403,9 +1403,10 @@ button.navbar__btn {
 
 .gap-to-bottom {
   margin-bottom: 95%; }
-  @media (max-width: 360px) {
-    .gap-to-bottom .gap-to-bottom {
-      margin-bottom: 5%; } }
+
+@media (max-width: 360px) {
+  .gap-to-bottom {
+    margin-bottom: 5%; } }
 
 .modal-menu-footer {
   padding-bottom: 30px; }

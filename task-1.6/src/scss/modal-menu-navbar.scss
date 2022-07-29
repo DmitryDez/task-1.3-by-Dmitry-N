@@ -34,10 +34,10 @@
 
 .gap-to-bottom {
   margin-bottom: 95%;
+}
 
-  @media (max-width: 360px) {
-    .gap-to-bottom {
-      margin-bottom: 5%;
-    }
+@media (max-width: 360px) {
+  .gap-to-bottom {
+    margin-bottom: 5%;
   }
 }
