@@ -1,0 +1,79 @@
+.brands{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-left: 15px;
+
+  &__card{
+    display: flex;
+    justify-content: space-between;
+    width: 210px;
+    height: 75px;
+    margin: 0 0 15px 15px;
+    padding: 0 15px;
+    background-color: $color-3;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    opacity: 1;
+    transition: opacity 0.5s, height 0.5s;
+  }
+}
+
+.brands-card__brand-logo{
+  width: 130px;
+  height: 30px;
+  align-self: center;
+}
+
+.brands-card__btn{
+  transition: transform 0.5s;
+}
+.brands-card__btn:hover {
+  transform: scale(0.9);
+}
+
+.little-logo{
+  position: relative;
+  left: -60px;
+  width: 210px;
+  height: 50px;
+}
+
+@media (max-width: 768px) {
+  .brands{
+    display: none;
+  }
+}
+
+/*sw-sl-br-card - swiper slide brand card*/
+.sw-sl-br-card{
+  display: flex;
+  justify-content: space-between;
+  width: 210px;
+  height: 75px;
+  padding: 0 15px;
+  background-color: $color-3;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+}
+
+.sw-sl-br-card__br-logo{
+  width: 130px;
+  height: 30px;
+  align-self: center;
+}
+
+.sw-sl-br-card__br-logo.little-logo{
+  position: relative;
+  left: -60px;
+  width: 210px;
+  height: 50px;
+}
+
+.sw-sl-br-card__btn{
+  transition: transform 0.5s;
+}
+
+.sw-sl-br-card__btn:hover {
+  transform: scale(0.9);
+}

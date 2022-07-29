@@ -1,0 +1,24 @@
+.hideElem{
+  height:   0 !important;
+  border:   0 !important;
+  opacity:  0 !important;
+
+  img{
+    height:   0 !important;
+    border:   0 !important;
+    opacity:  0 !important;
+  }
+  button{
+    height:   0 !important;
+    border:   0 !important;
+    opacity:  0 !important;
+  }
+
+  .repair-cards__title{
+    margin: 0;
+  }
+}
+
+.hide-mode-1{
+  display: none !important;
+}

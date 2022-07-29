@@ -1,0 +1,43 @@
+.table-info{
+  margin-top:   30px;
+  padding-left: 30px;
+
+  width: calc(70% - 320px);
+  min-width: 320px;
+
+  &__text{
+    font-size: $text-size-medium;
+    font-weight: normal;
+  }
+  &__offer{
+    font-size: $text-size-default;
+    font-weight: 500;
+  }
+
+  &__btn{
+    padding: 0;
+    transition: color 0.5s;
+    text-align: left;
+  }
+
+  &__offer-icon{
+    color: $color-1;
+    margin-left: 10px;
+    transition: color 0.5s;
+  }
+  &__btn:hover, &__btn:hover &__offer-icon{
+    color: #ccad00;
+  }
+}
+
+@media(max-width: 1119px){
+  .table-info{
+    width: 40%;
+  }
+}
+
+@media(max-width: 365px){
+  .table-info{
+    min-width: 280px;
+  }
+}

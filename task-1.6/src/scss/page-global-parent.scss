@@ -1,0 +1,14 @@
+.page{
+  display: flex;
+}
+.page-content-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 320px);   
+}
+
+@media(max-width: 1119px){
+  .page-content-wrapper{
+    width: 100%;
+  }
+}

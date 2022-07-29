@@ -1,0 +1,25 @@
+.parag {
+  padding: 0;
+  margin:  0;
+}
+
+.btn {
+  display: block;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link, .link:visited, .link:active {
+  color: $color-4;
+}

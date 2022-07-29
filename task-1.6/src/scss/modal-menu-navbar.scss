@@ -1,0 +1,43 @@
+.navbar-modal{
+  &__item {
+    position: relative;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  &__item--selected {
+    .navbar-modal__link{
+      color: $color-5;
+    }
+  }
+
+  &__item:hover{
+    .navbar-modal__link{
+      color: $color-5;
+    }
+  }
+
+  &__item--selected::before {
+    position: absolute;
+    content: url('../img/icons/highlight.svg');
+    top:  5px;
+    left: -24px;
+  }
+
+  &__link {
+    display: block;
+    font-size: $text-size-default;
+    font-weight: 500;
+    padding: 15px 0;
+  }
+}
+
+.gap-to-bottom {
+  margin-bottom: 95%;
+
+  @media (max-width: 360px) {
+    .gap-to-bottom {
+      margin-bottom: 5%;
+    }
+  }
+}

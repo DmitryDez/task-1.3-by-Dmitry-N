@@ -1,0 +1,55 @@
+.modal-menu-footer{
+  padding-bottom: 30px;
+
+  &__buttons{
+    display: flex;
+    margin-bottom: 15px;
+  }
+
+  &__btn{
+    padding:         0;
+    padding-left: 15px;
+    transition: transform 0.5s, filter 0.7s;
+  }
+
+  &__btn:hover{
+    transform: scale(0.9);
+    filter: hue-rotate(-180deg);
+  }
+
+  &__btn:first-child{
+    padding-left: 0;
+  }
+
+  &__mail{
+    font-size: $text-size-default;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  &__number{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+
+  .lang-switcher {
+    display: flex;
+    &__btn{
+      font-size: $text-size-default;
+      font-weight: 500;
+      padding: 0;
+      padding-left: 10px;
+      transition: color 0.5s;
+    }
+    &__btn:first-child{
+      padding-left: 0;
+    }
+    &__btn:hover{
+      color: #41F6D7;
+    }
+    &__btn--active{
+      color: $color-5;
+    }
+  }
+}

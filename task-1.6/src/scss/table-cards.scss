@@ -1,0 +1,63 @@
+.table-cards{
+  &__card{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: $color-3;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    padding: 15px;
+
+    height: 180px;
+  }
+
+  &__cell{
+    margin-bottom: 10px;
+  }
+
+  &__cell-th{
+    font-size:  $text-size-medium;
+    font-weight: 500;
+    color: $color-5;
+    margin-bottom: 5px;
+  }
+
+  &__cell-td{
+    font-size:  $text-size-medium;
+    font-weight: normal;
+  }
+
+  &__cell--last {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+
+  &__cell--last {
+    .table-cards__cell-td{
+      margin-right: 25px;
+    }
+  }
+
+  &__btn{
+    background-color: $color-1;
+    color: white;
+    text-transform: uppercase;
+    font-size: $text-size-small;
+    font-weight: bold;
+    border-radius: 16px;
+    padding: 10px 15px;
+    transition: transform 0.5s, color 0.2s;
+  }
+  &__btn-icon{
+    margin-left: 10px;
+  }
+
+  &__btn:hover{
+    transform: scale(0.96);
+  }
+
+  &__btn:active{
+    color: gold;
+  }
+}

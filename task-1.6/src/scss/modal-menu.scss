@@ -1,0 +1,52 @@
+.modal-menu{
+  width:     320px;
+  min-width: 320px;
+  background-color: $color-3;
+
+  &--visible{
+    position: absolute;
+    top:  0;
+    left: 0;
+    z-index: 2;
+    width: 320px;
+    min-width: 320px;
+    height:    100vh;
+    box-shadow:
+    -5px 0px 52px 0px #0E185033,
+    -15px 0px 4px  0px #454F7E05;
+    opacity: 1;
+    transition: opacity 0.8s;
+  }
+
+  &--visible{
+    #btnCloseMenuModal{
+      display: block;
+    }
+  }
+
+  .content-wrapper {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1119px) {
+  .modal-menu{
+    width:     0;
+    min-width: 0;
+    opacity:   0;
+    z-index:  -1;
+  }
+  .modal-menu--visible{
+    width:     320px;
+    min-width: 320px;
+    opacity:   1;
+    z-index:   2;
+  }
+}
+
+@media (min-width: 1119px) {
+  #btnCloseMenuModal{
+    display: none;
+  }
+}

@@ -1,0 +1,91 @@
+/*header-sm 320px-760px*/
+/*header-m* 768px-1120px*/
+.header-sm{
+  height: 90px;
+  background-color: $color-3;
+  border-bottom: $border-line-1;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    height:     100%;
+    min-width: 320px;
+  }
+
+  &__item {
+    margin-left: 15px;
+  }
+
+  &__item:nth-child(3) {
+    margin-left: auto;
+  }
+
+  &__item:last-child {
+    margin-right: 20px;
+  }
+}
+
+ @media (min-width: 768px) {
+  .header-sm {
+    display: none;
+  }
+}
+
+.header-m {
+  height: 90px;
+  background-color: $color-3;
+  border-bottom: $border-line-1;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__item {
+    margin-left: 15px;
+  }
+  &__item:first-child {
+    margin-right: 40px;
+  }
+  &__item:nth-child(3) {
+    margin-left: auto;
+  }
+  &__item:nth-child(6) {
+    margin-left: 50px;
+  }
+  &__item:last-child {
+    margin-right: 15px;
+  }
+}
+
+.header__btn {
+  padding: 0;
+}
+
+.header__btn img{
+  transition: opacity 0.5s;
+}
+
+.header__btn:hover img{
+  opacity: (0.7);
+}
+
+.header__btn_hasLine::before {
+  content: url('../img/icons/divider.svg');
+  position: relative;
+  top: -5px;
+  right: 15px;
+}
+
+@media (min-width: 1120px) {
+  .header-m {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-m {
+    display: none;
+  }
+}

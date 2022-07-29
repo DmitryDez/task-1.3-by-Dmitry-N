@@ -1,0 +1,36 @@
+.swiper, .swiper-2, .swiper-3{
+  padding-left: 15px;
+  padding-top: 10px;
+}
+.swiper {
+  width: 320px;
+  height: 140px;
+}
+.swiper-2{
+  width: 330px;
+  height: 220px;
+}
+.swiper-3{
+  width: 350px;
+  height: 280px;
+}
+
+.swiper--destroy{
+  width:   0;
+  height:  0;
+  padding: 0;
+}
+
+.swiper {
+  &-pagination {
+    padding-bottom: 15px;
+    &-bullet {
+      height: 13px;
+      width:  13px;
+      background: #DDDDDD;
+      &-active {
+        background: #B5B6BC;
+      }
+    }
+  }
+}

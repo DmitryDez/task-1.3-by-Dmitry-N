@@ -1,0 +1,36 @@
+@import '../../node_modules/normalize.css/normalize.css';
+@import '../../node_modules/swiper/swiper-bundle.css';
+
+@import 'fonts';
+@import 'var';
+@import 'common-elements';
+@import 'hide-styles';
+@import 'overlay';
+@import 'page-global-parent';
+@import 'page-header';
+@import 'main-title';
+@import 'page-navbar';
+@import 'about';
+@import 'section-title';
+@import 'control-button';
+@import 'modal-menu';
+@import 'modal-menu-header';
+@import 'modal-menu-navbar';
+@import 'modal-menu-footer';
+@import 'brands-cards';
+@import 'swipersStyle';
+@import 'repair-cards';
+@import 'prices-table';
+@import 'table-cards';
+@import 'table-info';
+@import 'feedback-modal';
+@import 'order-call-modal';
+@import 'page-footer';
+
+body{
+  font-family: $text-family-list;
+  font-size: $text-size-default;
+  color: $text-color-main;
+  background-color: $bg-color-main;
+  overflow-x: hidden;
+}
