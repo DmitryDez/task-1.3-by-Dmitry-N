@@ -9,15 +9,14 @@
     font-size: $text-size-medium;
     font-weight: normal;
   }
-  &__offer{
-    font-size: $text-size-default;
-    font-weight: 500;
-  }
 
   &__btn{
     padding: 0;
     transition: color 0.5s;
     text-align: left;
+    font-size: $text-size-default;
+    font-weight: 500;
+    color: $color-4;
   }
 
   &__offer-icon{
@@ -26,7 +25,7 @@
     transition: color 0.5s;
   }
   &__btn:hover, &__btn:hover &__offer-icon{
-    color: #ccad00;
+    color: $color-hover-3;
   }
 }
 

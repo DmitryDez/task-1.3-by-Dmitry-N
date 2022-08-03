@@ -46,10 +46,14 @@
       padding-left: 0;
     }
     &__btn:hover{
-      color: #41F6D7;
+      color: $color-hover-3;
     }
     &__btn--active{
       color: $color-5;
+    }
+    &__btn--active:hover{
+      color: $color-5;
+      cursor: default;
     }
   }
 }

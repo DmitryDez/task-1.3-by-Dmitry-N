@@ -5,15 +5,21 @@
     cursor: pointer;
   }
 
+  &__item:hover{
+    .navbar-modal__link{
+      color: $color-hover-3;
+    }
+  }
+
   &__item--selected {
     .navbar-modal__link{
       color: $color-5;
     }
   }
-
-  &__item:hover{
+  &__item--selected:hover {
     .navbar-modal__link{
       color: $color-5;
+      cursor: default;
     }
   }
 

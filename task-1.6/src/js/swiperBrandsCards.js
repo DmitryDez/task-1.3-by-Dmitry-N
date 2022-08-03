@@ -5,11 +5,8 @@ let swiperBrandsCardsElement = document.querySelector('.swiper.swiper-1');
  window.addEventListener('load', swiperBrandsCardsMode);
 
  function swiperBrandsCardsMode(){
-   let swiperBrandsCards = new Swiper('.swiper-1', {
-     modules: [Manipulation],
-   })
    if (window.matchMedia('(max-width: 767px)').matches) {
-     swiperBrandsCards = new Swiper('.swiper-1', {
+     let swiperBrandsCards = new Swiper('.swiper-1', {
        modules: [Pagination, Keyboard, Manipulation],
        direction: 'horizontal',
        loop: false,
@@ -19,19 +16,24 @@ let swiperBrandsCardsElement = document.querySelector('.swiper.swiper-1');
        speed: 600,
        keyboard: {
          enabled: true,
+         pageUpDown: true,
        },
        pagination: {
          el: '.sw-pag-1',
          clickable: true,
          type: 'bullets',
        },
-       debugger: true,
        init: true
      })
    } else {
+     let swiperBrandsCards = new Swiper('.swiper-1', {
+       modules: [Manipulation],
+     })
      swiperBrandsCards.removeAllSlides();
      swiperBrandsCards.disable();
+
      swiperBrandsCardsElement.classList.toggle('swiper--destroy');
+
    }
  }
 

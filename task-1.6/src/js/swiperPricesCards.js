@@ -5,11 +5,8 @@ let swiperPricesCardsElement = document.querySelector('.swiper.swiper-3');
  window.addEventListener('load', swiperPricesCardsMode);
 
  function swiperPricesCardsMode(){
-   let swiperPricesCards = new Swiper('.swiper-3', {
-     modules: [Manipulation],
-   })
    if (window.matchMedia('(max-width: 767px)').matches) {
-     swiperPricesCards = new Swiper('.swiper-3', {
+     let swiperPricesCards = new Swiper('.swiper-3', {
        modules: [Pagination, Keyboard, Manipulation],
        direction: 'horizontal',
        loop: false,
@@ -26,10 +23,12 @@ let swiperPricesCardsElement = document.querySelector('.swiper.swiper-3');
          clickable: true,
          type: 'bullets',
        },
-       debugger: true,
        init: true
      })
    } else {
+     let swiperPricesCards = new Swiper('.swiper-3', {
+       modules: [Manipulation],
+     })
      swiperPricesCards.removeAllSlides();
      swiperPricesCards.disable();
      swiperPricesCardsElement.classList.toggle('swiper--destroy');
