@@ -34,6 +34,11 @@
     width: 40%;
   }
 }
+@media(max-width: 768px){
+  .table-info{
+    margin-top: -15px;
+  }
+}
 
 @media(max-width: 365px){
   .table-info{
